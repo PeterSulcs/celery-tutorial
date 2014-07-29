@@ -1,9 +1,11 @@
 celery-tutorial
 ===============
 
-Code to replicate celery tutorial: https://www.youtube.com/watch?v=68QWZU_gCDA&feature=youtu.be
+Code to replicate the celery tutorial linked below while running in a Windows 8.1 environment.
 
-Running in Windows 8.1 environment
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=68QWZU_gCDA
+" target="_blank"><img src="http://img.youtube.com/vi/68QWZU_gCDA/hqdefault.jpg" 
+alt="Python Celery demo" width="240" height="180" border="10" /></a>
 
 setup
 -----
