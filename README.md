@@ -1,7 +1,7 @@
 celery-tutorial
 ===============
 
-Code to replicate celery tutorial.
+Code to replicate celery tutorial: https://www.youtube.com/watch?v=68QWZU_gCDA&feature=youtu.be
 
 setup
 -----
@@ -18,17 +18,23 @@ setup %RABBITMQ_SERVER%
 
 add %RABBITMQ_SERVER%\sbin to PATH
 
->rabbitmq-server
+```dos
+rabbitmq-server
+```
 
 starts the server.
 
 now run:
 
->>celery worker -A tasks -l INFO
+```dos
+celery worker -A tasks -l INFO
+```
 
 now run:
 
->>ipython
+```dos
+ipython
+```
 
 ```python
 from tasks import add
