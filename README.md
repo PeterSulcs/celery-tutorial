@@ -17,19 +17,20 @@ setup
 4. setup %RABBITMQ_SERVER%
 5. add %RABBITMQ_SERVER%\sbin to PATH
 
+
+6. Open a command window and type the following to start the server.
 ```dos
 rabbitmq-server
 ```
+   * If you get a node already started error, open task manager and kill the Erlang interpreter if it is running.
 
-starts the server.
-
-now run:
+7. In a second command window, run:
 
 ```dos
 celery worker -A tasks -l INFO
 ```
 
-now run:
+8. In a third command window, run:
 
 ```dos
 ipython
