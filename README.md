@@ -6,17 +6,12 @@ Code to replicate celery tutorial: https://www.youtube.com/watch?v=68QWZU_gCDA&f
 setup
 -----
 
-Install ERLANG
-
-Install RabbitMQ
-
+(1) Install ERLANG
+(2) Install RabbitMQ
 (I think if you do this in order and you don't use a 32bit version of RabbitMQ and 64bit version of Erlang you can skip the ERLANG_HOME setup)
-
-setup %ERLANG_HOME%
-
-setup %RABBITMQ_SERVER%
-
-add %RABBITMQ_SERVER%\sbin to PATH
+(3) setup %ERLANG_HOME%
+(4) setup %RABBITMQ_SERVER%
+(5) add %RABBITMQ_SERVER%\sbin to PATH
 
 ```dos
 rabbitmq-server
