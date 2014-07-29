@@ -19,25 +19,25 @@ setup
 
 
 6. Open a command window and type the following to start the server.
-```dos
-rabbitmq-server
-```
+  ```dos
+  rabbitmq-server
+  ```
    * If you get a node already started error, open task manager and kill the Erlang interpreter if it is running.
 
 7. In a second command window, run:
 
-```dos
-celery worker -A tasks -l INFO
-```
+  ```dos
+  celery worker -A tasks -l INFO
+  ```
 
 8. In a third command window, run:
 
-```dos
-ipython
-```
-
-```python
-from tasks import add
-for i in xrange(10000):
-  add.delay(i, i)
-```
+  ```dos
+  ipython
+  ```
+  
+  ```python
+  from tasks import add
+  for i in xrange(10000):
+    add.delay(i, i)
+  ```
