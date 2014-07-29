@@ -18,7 +18,7 @@ setup %RABBITMQ_SERVER%
 
 add %RABBITMQ_SERVER%\sbin to PATH
 
->>rabbitmq-server
+>rabbitmq-server
 
 starts the server.
 
@@ -30,7 +30,8 @@ now run:
 
 >>ipython
 
->>> from tasks import add
->>> for i in xrange(10000):
->>>   add.delay(i, i)
-
+```python
+from tasks import add
+for i in xrange(10000):
+  add.delay(i, i)
+```
